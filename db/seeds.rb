@@ -27,13 +27,13 @@ end
     )
 
     # tickets
-    # Faker::Number.between(0, @ticket_inventory.last.quantity).times do
-    #   Ticket.create(
-    #     ticket_number: Faker::Number.number(10),
-    #     user_id: @users.sample.id,
-    #     ticket_inventory_id: @ticket_inventory.last.id
-    #   )
-    # end
+    Faker::Number.between(0, @ticket_inventory.last.quantity).times do
+      Ticket.create(
+        ticket_number: Faker::Number.number(10),
+        user_id: @users.sample.id,
+        ticket_inventory_id: @ticket_inventory.last.id
+      )
+    end
 
   end
 
