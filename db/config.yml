@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: wk3d4
+  username: jamessapara
+
+  pool: 5
+  timeout: 5000
